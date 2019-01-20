@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FoodFix_1.2</string>
+    <string name="foodfix">FoodFix</string>
+    <string name="Restorator">Ресторатор</string>
+    <string name="User">Гость</string>
+    <string name="phone_nomber">Номер телефона</string>
+    <string name="password">Пароль</string>
+    <string name="exit">Вход</string>
+    <string name="regist">Регистрация</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="secondname">Отчество</string>
+    <string name="sendcode">Отправить код</string>
+    <string name="google_maps_key">AIzaSyDrwr_pXle9YnSfGosT2GfCDdfR26H8jhc</string>
+    <string name="entercode">Введите код</string>
+</resources>
