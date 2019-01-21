@@ -37,7 +37,7 @@ public class SecondMenu extends FragmentActivity {
                     return InfoFragment.newInstance();
                 case 1:
                     return RestMenuFragment.newInstance();
-                case 3:
+                case 2:
                     return OrderFragment.newInstance();
                 default: return InfoFragment.newInstance();
             }
