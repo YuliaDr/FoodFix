@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        tools:ignore="UselessParent">
+
+        <EditText android:id="@+id/surname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:hint="@string/surname"
+            android:paddingLeft="15dp"
+            android:textColorHint="#444"
+            android:textSize="16sp"/>
+
+        <EditText android:id="@+id/reg_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/name"
+            android:paddingLeft="15dp"
+            android:textColorHint="#444"
+            android:textSize="16sp"/>
+
+        <EditText android:id="@+id/reg_secondname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/secondname"
+            android:paddingLeft="15dp"
+            android:textColorHint="#444"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_nomber"
+            android:textColor="#42474b"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:paddingLeft="15dp"
+            android:textColorHint="#444"
+            android:inputType="phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="top|center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avatar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
