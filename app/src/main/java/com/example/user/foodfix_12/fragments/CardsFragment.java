@@ -3,6 +3,7 @@ package com.example.user.foodfix_12.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ public class CardsFragment extends Fragment {
         cardsRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         CardsAdapter adapter = new CardsAdapter();
         cardsRecycler.setAdapter(adapter);
+        cardsRecycler.addItemDecoration(new DividerItemDecoration(cardsRecycler.getContext(), DividerItemDecoration.HORIZONTAL));
         adapter.addCards(createCards());
         adapter.notifyDataSetChanged();
         return view;

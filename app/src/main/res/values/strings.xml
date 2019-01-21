@@ -13,4 +13,8 @@
     <string name="sendcode">Отправить код</string>
     <string name="google_maps_key">AIzaSyDrwr_pXle9YnSfGosT2GfCDdfR26H8jhc</string>
     <string name="entercode">Введите код</string>
+    <string name="rest_info">Verde cafe - это новый проект Зелёной компании. Он создан для людей, которым не безразличен окружающий мир и собственное здоровье, для которых важен качественный уровень досуга. Мы объединили уютный интерьер, качественный сервис, кулинарное искусство и максимальную пользу от продукта.</string>
+    <string name="rest_contact">Телефон: +7 (499) 350-96-44
+Адрес: г. Москва, Кутузовский проспект, д.36, стр.4, под. 4</string>
+    <string name="title_contact">Наши контакты</string>
 </resources>

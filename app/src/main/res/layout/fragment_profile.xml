@@ -1,70 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="5">
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:orientation="vertical"
-        android:layout_margin="15dp"
-        tools:ignore="UselessParent">
+        android:layout_weight="5"
+        android:orientation="horizontal">
 
-        <EditText android:id="@+id/surname"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dip"
-            android:singleLine="true"
-            android:hint="@string/surname"
-            android:paddingLeft="15dp"
-            android:textColorHint="#444"
-            android:textSize="16sp"/>
-
-        <EditText android:id="@+id/reg_name"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:hint="@string/name"
-            android:paddingLeft="15dp"
-            android:textColorHint="#444"
-            android:textSize="16sp"/>
-
-        <EditText android:id="@+id/reg_secondname"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:hint="@string/secondname"
-            android:paddingLeft="15dp"
-            android:textColorHint="#444"
-            android:textSize="16sp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/phone_nomber"
-            android:textColor="#42474b"
-            android:textSize="16sp"
-            android:singleLine="true"
-            android:paddingLeft="15dp"
-            android:textColorHint="#444"
-            android:inputType="phone"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:layout_gravity="top|center"
-        android:orientation="vertical">
-
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/avatar"/>
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:hint="@string/surname"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColorHint="#444"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColorHint="#444"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/reg_secondname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/secondname"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColorHint="#444"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_nomber"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="#42474b"
+                android:textColorHint="#444"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn"
+                android:text="Push me"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -1,60 +1,40 @@
 package com.example.user.foodfix_12.Other;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
+import android.graphics.Shader;
 
 import com.squareup.picasso.Transformation;
 
 public class CircularTransformation implements Transformation {
 
-    private int mRadius = 10;
-
-    public CircularTransformation(final int radius) {
-        this.mRadius = radius;
+    public CircularTransformation() {
     }
 
     @Override
-    public Bitmap transform(Bitmap source) {
-        Bitmap output = Bitmap.createBitmap(source.getWidth(), source.getHeight(),
-                Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(output);
-
+    public Bitmap transform(final Bitmap source) {
         final Paint paint = new Paint();
-        final Rect rect = new Rect(0, 0, source.getWidth(), source.getHeight());
-
         paint.setAntiAlias(true);
-        paint.setFilterBitmap(true);
-        paint.setDither(true);
+        paint.setShader(new BitmapShader(source, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
 
-        canvas.drawARGB(0, 0, 0, 0);
+        final Bitmap output = Bitmap.createBitmap(source.getWidth(), source.getHeight(), Bitmap.Config.ARGB_8888);
+        final Canvas canvas = new Canvas(output);
+        canvas.drawCircle(source.getWidth() / 2, source.getHeight() / 2, source.getWidth() / 2, paint);
 
-        paint.setColor(Color.parseColor("#BAB399"));
-
-        if (mRadius == 0) {
-            canvas.drawCircle(source.getWidth() / 2 + 0.7f, source.getHeight() / 2 + 0.7f,
-                    source.getWidth() / 2 - 1.1f, paint);
-        } else {
-            canvas.drawCircle(source.getWidth() / 2 + 0.7f, source.getHeight() / 2 + 0.7f,
-                    mRadius, paint);
-        }
-
-        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-
-        canvas.drawBitmap(source, rect, rect, paint);
-
-        if (source != output) {
+        if (source != output)
             source.recycle();
-        }
+
         return output;
     }
 
     @Override
     public String key() {
-        return "circular" + String.valueOf(mRadius);
+        return "circle";
     }
 }

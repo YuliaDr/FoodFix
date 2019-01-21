@@ -52,6 +52,11 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name=".activity.SecondMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
     </application>
 
 </manifest>
