@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import com.example.user.foodfix_12.R;
 import com.example.user.foodfix_12.fragments.InfoFragment;
 import com.example.user.foodfix_12.fragments.OrderFragment;
+import com.example.user.foodfix_12.fragments.PayFragment;
 import com.example.user.foodfix_12.fragments.RestMenuFragment;
 
 public class SecondMenu extends FragmentActivity {
@@ -39,6 +40,8 @@ public class SecondMenu extends FragmentActivity {
                     return RestMenuFragment.newInstance();
                 case 2:
                     return OrderFragment.newInstance();
+                case 3:
+                    return PayFragment.newInstance();
                 default: return InfoFragment.newInstance();
             }
         }

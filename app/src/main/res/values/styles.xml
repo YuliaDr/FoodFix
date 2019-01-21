@@ -10,8 +10,6 @@
     </style>
 
     <style name="BottomBar" parent="Theme.AppCompat.DayNight">
-        <item name="colorAccent">@android:color/holo_red_dark</item>
-        <item name="colorPrimary">@android:color/holo_red_dark</item>
 
     </style>
 
