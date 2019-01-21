@@ -4,10 +4,12 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toolbar;
 
 import com.example.user.foodfix_12.Other.CircularTransformation;
 import com.example.user.foodfix_12.R;
@@ -28,4 +30,5 @@ public class ProfileFragment extends Fragment {
                 .into(avatarImageView);
         return v;
     }
+
 }

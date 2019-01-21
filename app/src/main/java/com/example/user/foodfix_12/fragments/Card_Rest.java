@@ -1,6 +1,6 @@
 package com.example.user.foodfix_12.fragments;
 
-class Card {
+class Card_Rest {
 
     private final String title;
     private final String message_time;
@@ -8,7 +8,7 @@ class Card {
     private final String message_status;
     private final String message_place;
 
-    Card(String title, String message_time, String message_pay, String message_status, String message_place) {
+    Card_Rest(String title, String message_time, String message_pay, String message_status, String message_place) {
         this.title = title;
         this.message_time = message_time;
         this.message_pay = message_pay;
@@ -37,3 +37,4 @@ class Card {
     }
 
 }
+

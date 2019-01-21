@@ -14,7 +14,7 @@ import com.example.user.foodfix_12.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CardsFragment extends Fragment {
+public class CardsFragment_Rest extends Fragment {
 
     private RecyclerView cardsRecycler;
 

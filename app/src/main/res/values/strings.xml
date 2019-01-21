@@ -13,4 +13,7 @@
     <string name="sendcode">Отправить код</string>
     <string name="google_maps_key">AIzaSyDrwr_pXle9YnSfGosT2GfCDdfR26H8jhc</string>
     <string name="entercode">Введите код</string>
+    <string name="description">Описание</string>
+    <string name="contacts">Контакты</string>
+    <string name="make_contact">Добавить контакт</string>
 </resources>
