@@ -25,10 +25,10 @@ public class RestMenuFragment extends Fragment {
 
         mRecycler = v.findViewById(R.id.menu_recycler);
         mRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-        MenuAdapter adapter = new MenuAdapter();
+        RestMenuAdapter adapter = new RestMenuAdapter();
         mRecycler.setAdapter(adapter);
         mRecycler.addItemDecoration(new DividerItemDecoration(mRecycler.getContext(), DividerItemDecoration.HORIZONTAL));
-        adapter.addMenus(createMenus());
+        adapter.addMenu(createMenus());
         adapter.notifyDataSetChanged();
 
         return v;
