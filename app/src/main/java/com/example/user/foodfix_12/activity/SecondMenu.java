@@ -40,15 +40,13 @@ public class SecondMenu extends FragmentActivity {
                     return RestMenuFragment.newInstance();
                 case 2:
                     return OrderFragment.newInstance();
-                case 3:
-                    return PayFragment.newInstance();
                 default: return InfoFragment.newInstance();
             }
         }
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
     }
 }

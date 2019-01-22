@@ -10,19 +10,18 @@ import android.view.MenuItem;
 import com.example.user.foodfix_12.R;
 import com.example.user.foodfix_12.fragments.CardsFragment;
 import com.example.user.foodfix_12.fragments.MapFragment;
-import com.example.user.foodfix_12.fragments.ProfileFragment;
 
-public class MainMenu extends AppCompatActivity {
+public class RestMenuActivity extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_map:
+                case R.id.navigation_info_r:
                     changeFragment(new MapFragment());
                     return true;
-                case R.id.navigation_history:
+                case R.id.navigation_history_r:
                     changeFragment(new CardsFragment());
                     return true;
             }
@@ -34,15 +33,15 @@ public class MainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainmenu);
+        setContentView(R.layout.activity_restmenu);
 
-        BottomNavigationView navigation = findViewById(R.id.navigation);
+        BottomNavigationView navigation = findViewById(R.id.navigation_r);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        navigation.setSelectedItemId(R.id.navigation_map);
+        navigation.setSelectedItemId(R.id.navigation_info_r);
     }
 
     private void changeFragment(Fragment fragment) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.content, fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_r, fragment).commit();
     }
 
 }

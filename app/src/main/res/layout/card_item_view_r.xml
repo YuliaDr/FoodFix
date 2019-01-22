@@ -29,7 +29,7 @@
                 android:layout_weight="3">
 
                 <TextView
-                    android:id="@+id/card_title"
+                    android:id="@+id/card_title_r"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -41,8 +41,8 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
                 <TextView
-                    android:id="@+id/card_message_time"
-                    android:layout_below="@id/card_title"
+                    android:id="@+id/card_message_time_r"
+                    android:layout_below="@id/card_title_r"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -53,8 +53,8 @@
                     android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/card_message_pay"
-                    android:layout_below="@id/card_message_time"
+                    android:id="@+id/card_message_pay_r"
+                    android:layout_below="@id/card_message_time_r"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -73,7 +73,7 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/card_message_status"
+                    android:id="@+id/card_message_status_r"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -84,8 +84,8 @@
                     android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/card_message_place"
-                    android:layout_below="@id/card_message_status"
+                    android:id="@+id/card_message_place_r"
+                    android:layout_below="@id/card_message_status_r"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"

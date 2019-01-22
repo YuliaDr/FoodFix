@@ -49,10 +49,17 @@
         </activity>
 
         <activity android:name=".activity.MainMenu"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait">
         </activity>
 
         <activity android:name=".activity.SecondMenu"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.RestMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait">
         </activity>
 
