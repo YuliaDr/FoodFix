@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_history_rest"
+        android:id="@+id/navigation_history_r"
         android:icon="@drawable/ic_knizhka"
         android:title="История заказов" />
 
     <item
-        android:id="@+id/navigation_rest_profile"
+        android:id="@+id/navigation_info_r"
         android:icon="@drawable/ic_info_restorana"
-        android:title="Профиль" />
+        android:title="Информация о ресторане" />
 
 </menu>

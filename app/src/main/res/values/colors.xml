@@ -6,4 +6,5 @@
     <color name="color">#42474B</color>
     <color name="colorRestorator">#DDDDDD</color>
     <color name="colorUser">#020202</color>
+    <color name="colorBackground">#f1f0ec</color>
 </resources>

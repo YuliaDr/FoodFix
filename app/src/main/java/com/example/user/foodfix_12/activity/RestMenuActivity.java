@@ -10,11 +10,10 @@ import android.view.MenuItem;
 
 import com.example.user.foodfix_12.R;
 import com.example.user.foodfix_12.fragments.CardsFragment;
-import com.example.user.foodfix_12.fragments.MapFragment;
 import com.example.user.foodfix_12.fragments.ProfileFragment;
 
 @SuppressLint("Registered")
-public class RestActivity extends AppCompatActivity {
+public class RestMenuActivity extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener;
 
     {
@@ -40,7 +39,7 @@ public class RestActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rest);
+        setContentView(R.layout.activity_restmenu);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_history_rest);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
