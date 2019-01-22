@@ -41,8 +41,20 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
                 <TextView
-                    android:id="@+id/card_message_time_r"
+                    android:id="@+id/card_message_place_r"
                     android:layout_below="@id/card_title_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="22dp"
+                    android:textColor="@color/color"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/card_message_time_r"
+                    android:layout_below="@id/card_message_place_r"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -81,19 +93,8 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="18dp"
                     android:textColor="@color/color"
-                    android:textSize="18sp"/>
+                    android:textSize="16sp"/>
 
-                <TextView
-                    android:id="@+id/card_message_place_r"
-                    android:layout_below="@id/card_message_status_r"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="12dp"
-                    android:layout_marginTop="22dp"
-                    android:textColor="@color/color"
-                    android:textSize="14sp"/>
 
             </LinearLayout>
 

@@ -35,8 +35,9 @@ public class CardsFragment_R extends Fragment {
 
     private List<Card_R> createCards_R() {
         List<Card_R> cards_r = new ArrayList<>();
+        Card_R card_r;
         for (int i = 1; i < 10; i++) {
-            Card_R card_r = new Card_R("\"Название ресторана\"", "Время: ЧЧ:ММ", "Оплата: " + i*127 + "\u20BD", "\"Статус\"", "Отменить");
+            card_r = new Card_R("Заказ №" + i, "Время: ЧЧ:ММ", "Оплата: " + i*127 + "\u20BD", "Принято", "Номер телефона гостя: 8 909 *** ****");
             cards_r.add(card_r);
         }
         return cards_r;

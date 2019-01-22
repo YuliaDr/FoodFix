@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.user.foodfix_12.R;
@@ -51,6 +52,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.CardViewHold
         TextView message_pay;
         TextView message_status;
         TextView message_place;
+        Button btn;
 
         CardViewHolder(View itemView) {
             super(itemView);
@@ -59,6 +61,21 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.CardViewHold
             message_pay = itemView.findViewById(R.id.card_message_pay);
             message_status = itemView.findViewById(R.id.card_message_status);
             message_place = itemView.findViewById(R.id.card_message_place);
+            btn = itemView.findViewById(R.id.card_message_place);
+
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (message_status.getText().equals("Принято")) {
+                        message_status.setText("Отклонено");
+                        btn.setText("Возобновить");
+                    }
+                    else {
+                        message_status.setText("Принято");
+                        btn.setText("Отменить");
+                    }
+                }
+            });
         }
     }
 

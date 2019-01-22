@@ -9,22 +9,19 @@ import android.widget.TextView;
 import com.example.user.foodfix_12.R;
 
 public class ThankYouActivity extends AppCompatActivity {
+    private TextView textView1;
+    private TextView textView2;
+    private TextView textView3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thankyou);
-        TextView registerScreen = findViewById(R.id.link_to_register);
-        registerScreen.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-
-                Intent i = new Intent(getApplicationContext(), RegistrActivity.class);
-                startActivity(i);
-            }
-        });
-        textView = findViewById(R.id.textView);
+        textView1 = findViewById(R.id.textView1);
+        textView2 = findViewById(R.id.textView2);
+        textView3 = findViewById(R.id.textView3);
     }
 
-    private TextView textView;
 }
 

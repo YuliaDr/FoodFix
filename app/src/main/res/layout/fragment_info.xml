@@ -1,49 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-
-    <ImageView
-        android:id="@+id/imv"
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/cafe"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/rest_info"
-        android:textColor="@color/colorAccent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/imv"/>
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_contact"
-        android:textColor="@color/colorAccent"
-        android:textSize="17sp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/text1"/>
+        <ImageView
+            android:id="@+id/imv"
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sirius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/rest_contact"
-        android:textColor="@color/colorAccent"
-        android:layout_marginLeft="13dp"
-        app:layout_constraintTop_toBottomOf="@id/text2"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/info_rest"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@id/imv"
+            tools:layout_editor_absoluteX="2dp"
+            tools:ignore="MissingConstraints" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Телефон
+help@sochisirius.ru
+8 (800) 100 76 63"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/text1"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Наш адрес
+Краснодарский край, г. Сочи,
+Олимпийский проспект, дом 40"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="13dp"
+            app:layout_constraintTop_toBottomOf="@id/text2"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

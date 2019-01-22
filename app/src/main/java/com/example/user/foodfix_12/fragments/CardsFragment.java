@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.user.foodfix_12.R;
 
@@ -22,6 +23,7 @@ public class CardsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.cards_fragment_layout, container, false);
         cardsRecycler = view.findViewById(R.id.cards_recycler);
         cardsRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
@@ -30,13 +32,15 @@ public class CardsFragment extends Fragment {
         cardsRecycler.addItemDecoration(new DividerItemDecoration(cardsRecycler.getContext(), DividerItemDecoration.HORIZONTAL));
         adapter.addCards(createCards());
         adapter.notifyDataSetChanged();
+
         return view;
     }
 
     private List<Card> createCards() {
         List<Card> cards = new ArrayList<>();
+
         for (int i = 1; i < 10; i++) {
-            Card card = new Card("\"Название ресторана\"", "Время: ЧЧ:ММ", "Оплата: " + i*127 + "\u20BD", "\"Статус\"", "Отменить");
+            Card card = new Card("\"Название ресторана\"", "Время: ЧЧ:ММ", "Оплата: " + i*127 + "\u20BD", "Принято", "Отменить");
             cards.add(card);
         }
         return cards;

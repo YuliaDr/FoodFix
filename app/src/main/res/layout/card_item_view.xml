@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="2">
 
                 <TextView
                     android:id="@+id/card_message_status"
@@ -81,9 +81,9 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="18dp"
                     android:textColor="@color/color"
-                    android:textSize="18sp"/>
+                    android:textSize="16sp"/>
 
-                <TextView
+                <Button
                     android:id="@+id/card_message_place"
                     android:layout_below="@id/card_message_status"
                     android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
                     android:layout_marginBottom="12dp"
                     android:layout_marginTop="22dp"
                     android:textColor="@color/color"
-                    android:textSize="14sp"/>
+                    android:textSize="9sp"/>
 
             </LinearLayout>
 

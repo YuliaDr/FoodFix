@@ -1,5 +1,6 @@
 package com.example.user.foodfix_12.fragments;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.user.foodfix_12.R;
+import com.example.user.foodfix_12.activity.RestOrderActivity;
+import com.example.user.foodfix_12.activity.SecondMenu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,9 +54,19 @@ public class CardsAdapter_R extends RecyclerView.Adapter<CardsAdapter_R.CardView
         TextView message_pay_r;
         TextView message_status_r;
         TextView message_place_r;
+        public View view;
 
         CardViewHolder_R(View itemView) {
             super(itemView);
+//            view = itemView;
+//            view.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent i = new Intent(this, RestOrderActivity.class);
+//                    startActivity(i);
+//                }
+//            });
+
             title_r = itemView.findViewById(R.id.card_title_r);
             message_time_r = itemView.findViewById(R.id.card_message_time_r);
             message_pay_r = itemView.findViewById(R.id.card_message_pay_r);
