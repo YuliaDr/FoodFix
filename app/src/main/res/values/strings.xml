@@ -16,4 +16,10 @@
     <string name="description">Описание</string>
     <string name="contacts">Контакты</string>
     <string name="make_contact">Добавить контакт</string>
+    <string name="reg">Зарегестрироваться</string>
+    <string name="thank">Благодарим за заказ!</string>
+    <string name="text">Ссылка к оплате, отправленная на Ваш номер телефона, действительна в течении 5 минут. Поторопитесь оплатить заказ!</string>
+    <string name="t">Ссылка к оплате, отправленная на Ваш номер телефона, действительна в течении 5 минут. Поторопитесь оплатить заказ!</string>
+    <string name="dish">Блюдо1</string>
+    <string name="dish_1">Блюдо1</string>
 </resources>

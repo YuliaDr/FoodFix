@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#f1f0ec">
 
@@ -9,47 +10,10 @@
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
+            android:gravity="center_vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dip">
-
-            <EditText android:id="@+id/surname"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:singleLine="true"
-                android:hint="@string/surname"
-                android:paddingLeft="15dp"
-                android:textColorHint="#444"
-                android:textSize="16sp"/>
-
-            <EditText android:id="@+id/reg_name"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:hint="@string/name"
-                android:paddingLeft="15dp"
-                android:textColorHint="#444"
-                android:textSize="16sp"/>
-
-            <EditText android:id="@+id/reg_secondname"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:hint="@string/secondname"
-                android:paddingLeft="15dp"
-                android:textColorHint="#444"
-                android:textSize="16sp"/>
-
-            <EditText android:id="@+id/reg_password"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:singleLine="true"
-                android:hint="@string/password"
-                android:textColorHint="#444"
-                android:paddingLeft="15dp"
-                android:textSize="16sp"/>
+            android:layout_height="match_parent"
+            android:padding="15dp">
 
             <EditText
                 android:layout_width="match_parent"
@@ -62,6 +26,18 @@
                 android:textColorHint="#444"
                 android:inputType="phone"/>
 
+            <EditText android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="@string/password"
+                android:textColorHint="#444"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"/>
+
+
+
             <Button android:id="@+id/btnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,20 +46,8 @@
                 android:textColor="#e0e0e0"
                 android:backgroundTint="#42474b"
                 android:paddingHorizontal="20dp"
-                android:text="@string/sendcode"/>
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:hint="@string/entercode"
-                android:textColor="#42474b"
-                android:textSize="13sp"
-                android:paddingHorizontal="10dp"
-                android:singleLine="true"
-                android:textColorHint="#444"
-                android:inputType="phone"/>
+                android:text="@string/reg"/>
 
 
         </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

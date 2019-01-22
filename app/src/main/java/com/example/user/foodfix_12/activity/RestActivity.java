@@ -23,7 +23,7 @@ public class RestActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.navigation_history:
+                    case R.id.navigation_history_rest:
                         changeFragment(new CardsFragment());
                         return true;
                     case R.id.navigation_rest_profile:
@@ -40,11 +40,11 @@ public class RestActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainmenu);
+        setContentView(R.layout.activity_rest);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_history_rest);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        navigation.setSelectedItemId(R.id.navigation_map);
+        navigation.setSelectedItemId(R.id.navigation_history_rest);
     }
 
     private void changeFragment(Fragment fragment) {

@@ -21,7 +21,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/card_title"
+                android:id="@+id/card_titler"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -33,8 +33,8 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
             <TextView
-                android:id="@+id/card_message_time"
-                android:layout_below="@id/card_title"
+                android:id="@+id/card_message_timer"
+                android:layout_below="@id/card_titler"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -44,8 +44,8 @@
                 android:textSize="14sp"/>
 
             <TextView
-                android:id="@+id/card_message_pay"
-                android:layout_below="@id/card_message_time"
+                android:id="@+id/card_message_payr"
+                android:layout_below="@id/card_message_timer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -55,8 +55,8 @@
                 android:textSize="14sp"/>
 
             <TextView
-                android:id="@+id/card_message_status"
-                android:layout_below="@id/card_message_pay"
+                android:id="@+id/card_message_statusr"
+                android:layout_below="@id/card_message_payr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -66,8 +66,8 @@
                 android:textSize="14sp"/>
 
             <TextView
-                android:id="@+id/card_message_place"
-                android:layout_below="@id/card_message_status"
+                android:id="@+id/card_message_placer"
+                android:layout_below="@id/card_message_statusr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

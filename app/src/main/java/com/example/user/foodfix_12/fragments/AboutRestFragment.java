@@ -1,4 +1,6 @@
 package com.example.user.foodfix_12.fragments;
 
-public class AboutRestFragment {
+import android.app.Fragment;
+
+public class AboutRestFragment extends Fragment  {
 }

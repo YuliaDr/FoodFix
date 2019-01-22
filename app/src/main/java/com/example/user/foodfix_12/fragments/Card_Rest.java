@@ -2,38 +2,38 @@ package com.example.user.foodfix_12.fragments;
 
 class Card_Rest {
 
-    private final String title;
-    private final String message_time;
-    private final String message_pay;
-    private final String message_status;
-    private final String message_place;
+    private final String titler;
+    private final String message_timer;
+    private final String message_payr;
+    private final String message_statusr;
+    private final String message_placer;
 
-    Card_Rest(String title, String message_time, String message_pay, String message_status, String message_place) {
-        this.title = title;
-        this.message_time = message_time;
-        this.message_pay = message_pay;
-        this.message_status = message_status;
-        this.message_place = message_place;
+    Card_Rest(String titler, String message_timer, String message_payr, String message_statusr, String message_placer) {
+        this.titler = titler;
+        this.message_timer = getMessage_timer();
+        this.message_payr = getMessage_payr();
+        this.message_statusr = getMessage_statusr();
+        this.message_placer = getMessage_placer();
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitler() {
+        return titler;
     }
 
-    public String getMessage_time() {
-        return message_time;
+    public String getMessage_timer() {
+        return message_timer;
     }
 
-    public String getMessage_pay() {
-        return message_pay;
+    public String getMessage_payr() {
+        return message_payr;
     }
 
-    public String getMessage_status() {
-        return message_status;
+    public String getMessage_statusr() {
+        return message_statusr;
     }
 
-    public String getMessage_place() {
-        return message_place;
+    public String getMessage_placer() {
+        return message_placer;
     }
 
 }
