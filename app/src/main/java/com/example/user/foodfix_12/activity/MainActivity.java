@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.user.foodfix_12.R;
+import com.example.user.foodfix_12.fragments.RestMenuFragment;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         handler = new Handler();
         onEverySecond.run();
+
+        //testing
     }
     Runnable onEverySecond=new Runnable() {
         public void run() {
