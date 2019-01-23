@@ -17,13 +17,11 @@ import java.util.List;
 
 public class CardsFragment_R extends Fragment {
 
-    private RecyclerView cardsRecycler_R;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.cards_fragment_layout_r, container, false);
-        cardsRecycler_R = view.findViewById(R.id.cards_recycler_r);
+        RecyclerView cardsRecycler_R = view.findViewById(R.id.cards_recycler_r);
         cardsRecycler_R.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         CardsAdapter_R adapter = new CardsAdapter_R();
         cardsRecycler_R.setAdapter(adapter);

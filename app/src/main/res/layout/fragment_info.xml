@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -18,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="263dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/Sirius"
+        android:src="@drawable/sirius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +31,8 @@
         android:text="@string/info_rest"
         android:textColor="@color/colorAccent"
         app:layout_constraintTop_toBottomOf="@id/imv"
-        tools:layout_editor_absoluteX="2dp" />
+        tools:layout_editor_absoluteX="2dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text2"

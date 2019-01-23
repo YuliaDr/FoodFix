@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "489604341208",
+    "firebase_url": "https://foodfix-master-cd80b.firebaseio.com",
+    "project_id": "foodfix-master-cd80b",
+    "storage_bucket": "foodfix-master-cd80b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489604341208:android:16fbb052d2745b57",
+        "android_client_info": {
+          "package_name": "com.example.user.foodfix_12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489604341208-2kdq7pdm88j0itb9gdan77jecn0loebr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.foodfix_12",
+            "certificate_hash": "64d7cf6deaad4de91212ee44c7edf7821b55ea55"
+          }
+        },
+        {
+          "client_id": "489604341208-6oeevb2d4u0sn5ib1gd58p1i05rno630.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYYGJAbHoNEgEiHhqcYGiznEVTjOPZQHU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489604341208-6oeevb2d4u0sn5ib1gd58p1i05rno630.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
