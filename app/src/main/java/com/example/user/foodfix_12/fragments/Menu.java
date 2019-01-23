@@ -34,12 +34,7 @@ class Menu {
 
     public static void saveChanges(List<Menu> menus) {
         //TODO send new menu to server
-        try {
-            Toast.makeText(MyApplication.getAppContext(), "Идет сохранение", Toast.LENGTH_SHORT).show();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
 
     public String getTitleM() {
