@@ -11,6 +11,7 @@ import com.example.user.foodfix_12.R;
 import com.example.user.foodfix_12.fragments.CardsFragment;
 import com.example.user.foodfix_12.fragments.MapFragment;
 import com.example.user.foodfix_12.fragments.ProfileFragment;
+import com.example.user.foodfix_12.fragments.RestMenuFragment;
 
 public class MainMenu extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -18,7 +19,9 @@ public class MainMenu extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
+            //test
+            changeFragment(new RestMenuFragment());
+            /*switch (item.getItemId()) {
                 case R.id.navigation_map:
                     changeFragment(new MapFragment());
                     return true;
@@ -28,8 +31,9 @@ public class MainMenu extends AppCompatActivity {
                 case R.id.navigation_profile:
                     changeFragment(new ProfileFragment());
                     return true;
-            }
-            return false;
+            }*/
+            return true;
+            //return false;
         }
 
     };
